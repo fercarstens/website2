@@ -1,0 +1,63 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<title>Te Amo</title>   
+	    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+	    <link rel="stylesheet" href="{% static 'js/jquery.js' %}">
+	    <link rel="stylesheet" href="{% static 'js/particles.js' %}">
+	    <link rel="stylesheet" href="{% static 'js/particulas.js' %}">
+	</head>
+
+<body>
+	<div id="particles-js"></div>
+
+	<header>
+		<div class="menu">
+			<div class="contenedor">
+				<div class="logo">FerCarstens</div>
+				<nav>
+					<ul>
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	
+	<div class="texto">
+		<h2><a href="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12745447_10206761886940589_2524652319114239422_n.jpg?oh=dc56c74cb9073be0f71de59c990d6106&oe=57870DB2">Moon of my Life</a></h2>
+	</div>
+	
+	<div class="principal contenedor">
+    <article>
+    {% for post in posts %}
+        <div>
+            <h1>{{ post.titulo }}</h1>
+            <p>{{ post.texto|linebreaks }}</p>
+            <p2>Públicado {{ post.fecha_publicado }} por {{ post.autor }}</p2>
+        </div>
+    {% endfor %}
+    </article>
+	</div>	
+	
+
+
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="{% static 'js/particles.js' %}"></script>
+	<script src="{% static 'js/particulas.js' %}"></script>
+
+</body>
+
+</html>
