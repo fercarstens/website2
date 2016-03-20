@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Lobster', cursive, helvetica, arial, sans-serif;
-    background: url(234.jpg), #000;
+    background: url(87.jpg), #000;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -31,19 +31,20 @@ body {
 
 header {
     position: relative;
-    height: auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 header .menu {
     background: rgba(255,255,255,.7);
     overflow: hidden;
+    line-height: 60px;
 }
 
 header .logo {
     color: rgba(0,0,0,.8);
     float: left;
     font-size: 30px;
-    line-height: 50px;
 }
 
 header nav {
@@ -62,9 +63,8 @@ header nav ul li a {
     color: rgba(0,0,0,.8);
     text-decoration: none;
     display: block;
-    font-size: 18px;
+    font-size: 35px;
     padding: 0 20px;
-    line-height: 60px;
 }
 
 header nav ul li:hover {
@@ -74,6 +74,10 @@ header nav ul li:hover {
 
 header nav ul li a:hover {
     color: #fff;
+}
+
+.menu_bar {
+    display: none;
 }
 
 .texto {
@@ -99,14 +103,93 @@ header nav ul li a:hover {
     letter-spacing: 2.5px;
 }
 
+.texto .contenedor2{
+    display: none;
+}
 
 .principal {
     position: relative;
     color:#000;
     padding: 20px;
-    background:rgba(255,255,255,.7);
+    background:rgba(255,255,255,.6);
     margin-bottom: 20px;
     line-height: 24px;
+}
+
+
+
+@media screen and (max-width: 620px) {
+        .texto a {
+        font-size: 60px;
+        letter-spacing: 2.5px;
+    }
+    .contenedor {
+        color: #000;
+        width:90%;
+        max-width:1000px;
+        margin:auto;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+        .texto a {
+        font-size: 40px;
+        letter-spacing: 2.5px;
+    }
+
+    .contenedor {
+        color: #000;
+        width:90%;
+        max-width:1000px;
+        margin:auto;
+    }
+
+    header {
+        display: none;
+    }
+
+    .texto h2, .texto a {
+        color: rgba(120,40,60,.8);
+        background: rgba(255,255,255,.7);
+        display: inline-block;
+        padding: 10px 10px;
+    }
+
+    .texto .contenedor2 nav ul li:hover {
+        background: rgba(255,255,255,.8);
+    }
+
+
+    .texto .contenedor2 nav ul li a:hover {
+        color: rgba(120,40,60,.8);
+    }
+
+    .texto .contenedor2{
+        width: 90%;
+        margin: auto;
+        display: block;
+        position: relative;
+        z-index: 
+    }
+
+    .texto .contenedor2 nav ul {
+        overflow: hidden;
+        list-style: none;
+    }
+
+    .texto .contenedor2 nav ul li {
+        float: left;
+    }
+
+    .texto .contenedor2 nav ul li a {
+        color: rgba(0,0,0,.7);
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        padding: 2px 2px;
+    }
 }
 
 article {
@@ -124,7 +207,7 @@ article h1 {
 
 article p {
     color: rgba(0,0,0,.8);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 article p2 {
@@ -132,10 +215,9 @@ article p2 {
     font-size: 15px;
 }
 
-
 /*h1 a {
-	color: #8CA200;
-	font-size: 24pt;
+    color: #8CA200;
+    font-size: 24pt;
         font-family: 'Lobster';
 }
 
