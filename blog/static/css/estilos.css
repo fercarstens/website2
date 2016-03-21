@@ -191,6 +191,18 @@ header nav ul li a:hover {
         font-size: 30px;
         padding: 2px 2px;
     }
+
+    .texto .contenedor2 div button {
+        padding: 0;
+        overflow: hidden;
+        list-style: none;
+        float: right;
+        color: rgba(0,0,0,.5);
+
+    }
+
+
+
 }
 
 article {
@@ -214,6 +226,19 @@ article p {
 article p2 {
     color: rgba(0,0,0,.3);
     font-size: 15px;
+}
+
+
+audio {
+    width: 0;
+    height: 0;
+}
+
+div button {
+    color: rgba(0,0,0,.5);
+    position: relative;
+    display: inline-block;
+    float: left;
 }
 
 /*h1 a {
