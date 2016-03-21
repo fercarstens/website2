@@ -153,7 +153,6 @@ header nav ul li a:hover {
     .texto h2, .texto a {
         color: rgba(120,40,60,.8);
         background: rgba(255,255,255,.7);
-        display: inline-block;
         padding: 10px 10px;
     }
 
@@ -167,26 +166,31 @@ header nav ul li a:hover {
     }
 
     .texto .contenedor2{
-        width: 90%;
-        margin: auto;
-        display: block;
         position: relative;
+        display: table;
+        margin: auto;
+        width: 90%;
         z-index: 
     }
 
     .texto .contenedor2 nav ul {
         overflow: hidden;
         list-style: none;
+        display: table;
+        margin: auto;
     }
 
     .texto .contenedor2 nav ul li {
         float: left;
+        display: table;
+        margin: auto;
     }
 
     .texto .contenedor2 nav ul li a {
         color: rgba(0,0,0,.7);
         text-decoration: none;
-        display: inline-block;
+        display: table;
+        margin: auto;
         font-size: 30px;
         padding: 2px 2px;
     }
